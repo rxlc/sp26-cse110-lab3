@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Meeting minutes for finding the best UCSD study spot."
+    />
+    <title>Meeting Minutes</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Meeting Minutes</h1>
+      <h2>Topic: Find the best study spot at UCSD</h2>
+    </header>
+
+    <nav>
+      <h3>Quick Navigation</h3>
+      <ul>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#media">Media & Info</a></li>
+        <li><a href="#form">Feedback Form</a></li>
+      </ul>
+    </nav>
+    <hr />
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <div>
+          <ul>
+            <li>Quinton</li>
+            <li>James</li>
+            <li>Hayden</li>
+            <li>Paul</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <p>Reviewing <b>Geisel</b> versus <i>WongAvery</i>.</p>
+        <ol>
+          <li>Evaluate noise levels. <br /><span>(Keep it brief)</span></li>
+          <li>Vote on the <strong>best</strong> overall spot</li>
+          <li>Assign <em>tasks</em> for next week</li>
+          <li>
+            Turns out the best study spot wasn't Geisel or WongAvery, but
+            <strong>[REDACTED]</strong>
+          </li>
+        </ol>
+      </section>
+
+      <section id="media">
+        <h2>Media & Info</h2>
+        <details>
+          <summary>View Geisel Photo</summary>
+          <img src="geisel.jpg" alt="Geisel Library" width="300" />
+        </details>
+        <p>Audio of meeting:</p>
+        <audio controls src="nomnom.mp3">
+          Your browser does not support audio
+        </audio>
+
+        <p>Video of the meeting:</p>
+        <video controls width="580" src="nomnom.mp4">
+          Your browser does not support video
+        </video>
+      </section>
+
+      <section id="form">
+        <h2>Feedback Form</h2>
+        <form action="#" method="get">
+          <fieldset>
+            <p>Name: <input type="text" name="name" /></p>
+            <p>Date: <input type="date" name="date" /></p>
+            <p>
+              Favorite Spot:
+              <input list="spots" name="spot" />
+              <datalist id="spots">
+                <option value="Geisel"></option>
+                <option value="WongAvery"></option>
+                <option value="Price Center"></option>
+              </datalist>
+            </p>
+            <p>
+              Year:
+              <select name="year">
+                <option value="1">Freshman</option>
+                <option value="2">Sophomore</option>
+                <option value="3">Junior</option>
+                <option value="4">Senior</option>
+              </select>
+            </p>
+            <p>
+              Status:
+              <input type="radio" id="ugrad" name="status" value="undergrad" />
+              Undergrad
+              <input type="radio" id="grad" name="status" value="grad" /> Grad
+            </p>
+            <p><input type="checkbox" name="subscribe" /> Join mailing list</p>
+            <p>
+              Notes:
+              <textarea name="comments" rows="2" cols="20"></textarea>
+            </p>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>End of meeting minutes.</p>
+    </footer>
+  </body>
+</html>
