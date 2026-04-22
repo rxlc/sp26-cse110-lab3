@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-Site link: https://rxlc.github.io/Lab2_Starter/
+Site link: https://rxlc.github.io/sp26-cse110-lab3/
