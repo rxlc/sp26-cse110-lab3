@@ -7,12 +7,18 @@
       content="Meeting minutes for finding the best UCSD study spot."
     />
     <title>Meeting Minutes</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
       <h1>Meeting Minutes</h1>
       <h2>Topic: Find the best study spot at UCSD</h2>
+      <style>
+        p {
+          color: #e3d5ca;
+        }
+      </style>
     </header>
 
     <nav>
@@ -24,7 +30,6 @@
         <li><a href="#form">Feedback Form</a></li>
       </ul>
     </nav>
-    <hr />
 
     <main>
       <section id="attendance">
@@ -59,7 +64,8 @@
           <summary>View Geisel Photo</summary>
           <img src="geisel.jpg" alt="Geisel Library" width="300" />
         </details>
-        <p>Audio of meeting:</p>
+
+        <p class="highlight">Audio of meeting:</p>
         <audio controls src="nomnom.mp3">
           Your browser does not support audio
         </audio>
@@ -113,7 +119,7 @@
 
     <footer>
       <hr />
-      <p>End of meeting minutes.</p>
+      <p style="color: #ddbea9; font-weight: 700">End of meeting minutes.</p>
     </footer>
   </body>
 </html>
