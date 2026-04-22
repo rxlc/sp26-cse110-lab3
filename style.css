@@ -1,0 +1,203 @@
+/* 3rd party font */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+}
+
+/* Variable and Fallbacks */
+:root {
+  --primary-text: rgba(235, 235, 240, 0.9);
+  --accent-color: orange;
+}
+
+/* Element Selector */
+body {
+  background-color: #0e0f10;
+
+  color: var(--primary-text, #ffffff);
+  font-family: "Figtree", sans-serif;
+  line-height: 1.6;
+
+  /* Margin and padding shorthand */
+  margin: 0 auto;
+  padding: 25px;
+
+  /* Relative unit */
+  min-height: 100vh;
+}
+
+header {
+  /* Block display */
+  display: block;
+
+  width: 80vw;
+  max-width: 800px;
+  min-width: 300px;
+
+  /* Text alginment */
+  text-align: center;
+  background-color: rgb(20, 20, 25); /* rgb color */
+
+  /* Margin and padding longhand */
+  margin-top: 10px;
+  margin-bottom: 5mm;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border-style: solid;
+  border-color: #333;
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+/* Adjacent Selector */
+h1 + h2 {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #4087b9;
+  font-size: 24pt;
+}
+
+h2 {
+  color: #bf9f26;
+}
+
+h3 {
+  color: hsl(74, 32%, 76%);
+}
+
+h2 ~ div {
+  padding: 1em;
+}
+
+a {
+  /* Wider Gamut Color */
+  color: color(display-p3 0.706 0.392 0.455);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Pseudo class selector */
+a:hover {
+  color: lightcoral;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ffcc00;
+}
+
+/* Selector list */
+main,
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background-color: color-mix(in srgb, #0e0f10 85%, #fefae0 15%);
+
+  border: 2px solid #faedcd;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* Descendant Combinator */
+nav ul {
+  /* Flexbox layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+/* Id selector */
+#attendance {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+/* Child combinator */
+section > h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Class selector */
+.highlight {
+  color: var(--accent-color);
+}
+
+p.highlight {
+  font-weight: bold;
+
+  display: inline;
+}
+
+/* Attribute selector */
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* :has() selector */
+section:has(form) {
+  border: 2px dashed #bf9f26;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Grid layout */
+form fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  align-items: center;
+
+  border-color: #4087b9;
+}
+
+/* Nested selector */
+footer {
+  position: relative;
+  height: 50px;
+  text-align: center;
+  p {
+    color: #888;
+    font-size: 0.9em;
+  }
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+  form fieldset {
+    grid-template-columns: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
